@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+ * DESIGN SYSTEM - Custom Headless CMS
+ * Color palette: Deep navy + warm amber accents
+ * Typography: Playfair Display (headings) + Source Sans 3 (body)
+ * Style: Clean, professional, editorial
+ */
+
+@layer base {
+  :root {
+    /* Core Colors - Navy & Amber Theme */
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary: Deep Navy */
+    --primary: 222 47% 18%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary: Warm Gray */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    /* Muted: Light Gray */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent: Warm Amber */
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
+
+    /* Status Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders & Inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 38 92% 50%;
+
+    --radius: 0.5rem;
+
+    /* Admin Sidebar - Dark Theme */
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 47% 18%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 222 47% 20%;
+    --sidebar-ring: 38 92% 50%;
+
+    /* Custom Tokens */
+    --draft: 220 14% 46%;
+    --published: 142 71% 45%;
+
+    /* Typography Scale */
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Source Sans 3', system-ui, sans-serif;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 222 47% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 222 47% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 47% 20%;
+    --input: 222 47% 20%;
+    --ring: 38 92% 50%;
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 47% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 222 47% 15%;
+    --sidebar-ring: 38 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Status Badges */
+  .status-draft {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  .status-published {
+    @apply bg-success/10 text-success;
+  }
+
+  /* Quill Editor Styles */
+  .ql-container {
+    @apply font-body text-base border-border;
+  }
+
+  .ql-toolbar {
+    @apply border-border bg-secondary/50;
+  }
+
+  .ql-editor {
+    @apply min-h-[300px] font-body;
+  }
+
+  .ql-editor h1 {
+    @apply font-display text-3xl font-bold;
+  }
+
+  .ql-editor h2 {
+    @apply font-display text-2xl font-semibold;
+  }
+
+  .ql-editor h3 {
+    @apply font-display text-xl font-medium;
+  }
+
+  .ql-editor p {
+    @apply leading-relaxed mb-4;
+  }
+
+  .ql-editor blockquote {
+    @apply border-l-4 border-accent pl-4 italic text-muted-foreground;
+  }
+
+  /* Blog Content Styles */
+  .blog-content {
+    @apply prose prose-lg max-w-none;
+  }
+
+  .blog-content h1 {
+    @apply font-display text-4xl font-bold mb-6;
+  }
+
+  .blog-content h2 {
+    @apply font-display text-2xl font-semibold mb-4 mt-8;
+  }
+
+  .blog-content h3 {
+    @apply font-display text-xl font-medium mb-3 mt-6;
+  }
+
+  .blog-content p {
+    @apply mb-4 leading-relaxed text-foreground/90;
+  }
+
+  .blog-content blockquote {
+    @apply border-l-4 border-accent pl-6 my-6 italic text-muted-foreground;
+  }
+
+  .blog-content ul, .blog-content ol {
+    @apply mb-4 pl-6;
+  }
+
+  .blog-content li {
+    @apply mb-2;
+  }
+
+  .blog-content a {
+    @apply text-accent hover:underline;
+  }
+
+  .blog-content img {
+    @apply rounded-lg my-6;
+  }
+}
+
+@layer utilities {
+  /* Animations */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.2s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from { 
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to { 
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
