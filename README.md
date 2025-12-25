@@ -4,8 +4,6 @@ A modern, professional headless Content Management System designed for managing 
 
 This project was built to bridge the gap between complex enterprise CMS platforms and simple static site generators. It provides a robust, user-friendly interface for content creators while maintaining a clean, scalable backend architecture for developers. It focuses on the core essentials of blogging: writing, organizing, and publishing.
 
-## Screenshots
-
 ### Public Homepage
 The public-facing homepage of BlogCMS, designed for a clean and professional reading experience.
 
@@ -14,17 +12,29 @@ The public-facing homepage of BlogCMS, designed for a clean and professional rea
 ## Features
 
 ### Admin Dashboard (The Nerve Center)
-*   **Intuitive Post Management**: Create, view, edit, and delete blog posts from a centralized dashboard.
-*   **Draft vs Published Workflow**: Work on content in draft mode and publish it only when it is ready for the public.
-*   **Category Management**: Organize posts with custom categories for better content discoverability.
-*   **Rich Text Editing**: Write using a WYSIWYG editor that supports headers, lists, and formatting.
-*   **Secure Authentication**: Protected admin routes ensuring only authorized users can manage content.
 
 #### Admin Dashboard Overview
 A centralized dashboard showing post statistics, drafts, published content, and recent activity.
 
 ![Admin Dashboard](./BlogCMS-Project%20Interface/admin-dashboard.png)
 
+*   **Intuitive Post Management**: Create, view, edit, and delete blog posts from a centralized dashboard.
+
+### Manage Posts
+Admin interface to view, edit, publish, and delete blog posts.
+
+![All Posts](./BlogCMS-Project%20Interface/admin-all-posts.png)
+  
+*   **Draft vs Published Workflow**: Work on content in draft mode and publish it only when it is ready for the public.
+*   **Category Management**: Organize posts with custom categories for better content discoverability.
+
+### Category Management
+Create and manage blog categories from the admin panel.
+
+![Categories](./BlogCMS-Project%20Interface/admin-categories.png)
+
+*   **Rich Text Editing**: Write using a WYSIWYG editor that supports headers, lists, and formatting.
+*   **Secure Authentication**: Protected admin routes ensuring only authorized users can manage content.
 
 ### Public Blog (The Reader Experience)
 *   **Modern Listing Page**: A clean, responsive grid layout showing all published articles.
@@ -63,6 +73,11 @@ Admin users log in via a dedicated auth page. The system verifies credentials ag
 
 ### Creating a Post
 Inside the admin panel, users click "New Post". The editor allows entry of the title, content, and featured image URL. A slug is automatically generated from the title to ensure SEO-friendly URLs.
+
+### Create New Post
+Rich text editor with draft and publish workflow.
+
+![Create Post](./BlogCMS-Project%20Interface/create-post-editor.png)
 
 ### Draft vs Published Logic
 Every post has a status field. "Draft" posts are saved in the database but filtered out from public API calls. Once the status is changed to "Published," the post becomes visible on the public listing and detail pages.
