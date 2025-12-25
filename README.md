@@ -4,7 +4,7 @@ A modern, professional headless Content Management System designed for managing 
 
 This project was built to bridge the gap between complex enterprise CMS platforms and simple static site generators. It provides a robust, user-friendly interface for content creators while maintaining a clean, scalable backend architecture for developers. It focuses on the core essentials of blogging: writing, organizing, and publishing.
 
-### Public Homepage
+#### Public Homepage
 The public-facing homepage of BlogCMS, designed for a clean and professional reading experience.
 
 ![Public Homepage](./BlogCMS-Project%20Interface/public-homepage.png)
@@ -18,20 +18,17 @@ A centralized dashboard showing post statistics, drafts, published content, and 
 
 ![Admin Dashboard](./BlogCMS-Project%20Interface/admin-dashboard.png)
 
+#### Manage Posts
 *   **Intuitive Post Management**: Create, view, edit, and delete blog posts from a centralized dashboard.
 
-### Manage Posts
-Admin interface to view, edit, publish, and delete blog posts.
-
-![All Posts](./BlogCMS-Project%20Interface/admin-all-posts.png)
+![All Posts](./BlogCMS-Project%20Interface/admin-all-posts.png)  
   
-*   **Draft vs Published Workflow**: Work on content in draft mode and publish it only when it is ready for the public.
-*   **Category Management**: Organize posts with custom categories for better content discoverability.
+*   **Draft vs Published Workflow**: Work on content in draft mode and publish it only when it is ready for the public. 
 
-### Category Management
-Create and manage blog categories from the admin panel.
+#### Category Management
+ Organize posts with custom categories for better content discoverability.
 
-![Categories](./BlogCMS-Project%20Interface/admin-categories.png)
+![Categories](./BlogCMS-Project%20Interface/admin-categories.png)  
 
 *   **Rich Text Editing**: Write using a WYSIWYG editor that supports headers, lists, and formatting.
 *   **Secure Authentication**: Protected admin routes ensuring only authorized users can manage content.
@@ -42,7 +39,7 @@ Create and manage blog categories from the admin panel.
 *   **Responsive Article Views**: Optimized reading experience across mobile, tablet, and desktop devices.
 *   **Fast Content Loading**: Efficient data fetching from the backend API for a smooth user experience.
 
-### Public Blog Listing
+#### Public Blog Listing
 Responsive blog listing page displaying all published posts with category filters.
 
 ![Public Blog Listing](./BlogCMS-Project%20Interface/public-blog-listing.png)
@@ -74,7 +71,7 @@ Admin users log in via a dedicated auth page. The system verifies credentials ag
 ### Creating a Post
 Inside the admin panel, users click "New Post". The editor allows entry of the title, content, and featured image URL. A slug is automatically generated from the title to ensure SEO-friendly URLs.
 
-### Create New Post
+#### Create New Post Editor
 Rich text editor with draft and publish workflow.
 
 ![Create Post](./BlogCMS-Project%20Interface/create-post-editor.png)
