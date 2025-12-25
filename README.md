@@ -20,11 +20,23 @@ The public-facing homepage of BlogCMS, designed for a clean and professional rea
 *   **Rich Text Editing**: Write using a WYSIWYG editor that supports headers, lists, and formatting.
 *   **Secure Authentication**: Protected admin routes ensuring only authorized users can manage content.
 
+#### Admin Dashboard Overview
+A centralized dashboard showing post statistics, drafts, published content, and recent activity.
+
+![Admin Dashboard](./BlogCMS-Project%20Interface/admin-dashboard.png)
+
+
 ### Public Blog (The Reader Experience)
 *   **Modern Listing Page**: A clean, responsive grid layout showing all published articles.
 *   **Dynamic Category Filtering**: Readers can quickly filter posts by their interest areas.
 *   **Responsive Article Views**: Optimized reading experience across mobile, tablet, and desktop devices.
 *   **Fast Content Loading**: Efficient data fetching from the backend API for a smooth user experience.
+
+### Public Blog Listing
+Responsive blog listing page displaying all published posts with category filters.
+
+![Public Blog Listing](./BlogCMS-Project%20Interface/public-blog-listing.png)
+
 
 ## Tech Stack
 
