@@ -29,7 +29,7 @@ A centralized dashboard showing post statistics, drafts, published content, and 
 
 ![Categories](./BlogCMS-Project%20Interface/admin-categories.png)  
 
-
+#### Editor & Security
 *   **Rich Text Editing**: Write using a WYSIWYG editor that supports headers, lists, and formatting.
 *   **Secure Authentication**: Protected admin routes ensuring only authorized users can manage content.
 
@@ -171,3 +171,7 @@ Run the frontend: `npm run dev`
 ## Conclusion
 
 BlogCMS is a fully functional, internship-ready project that demonstrates a solid grasp of modern web development. It showcases the ability to build a secure, database-driven application with a focus on user experience and clean architecture. It is a testament to disciplined coding and a commitment to building practical, real-world tools.
+
+## License
+
+This project is licensed under the MIT License.
