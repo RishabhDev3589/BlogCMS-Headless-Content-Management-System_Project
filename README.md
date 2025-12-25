@@ -20,15 +20,15 @@ A centralized dashboard showing post statistics, drafts, published content, and 
 
 #### Manage Posts
 *   **Intuitive Post Management**: Create, view, edit, and delete blog posts from a centralized dashboard.
+*   **Draft vs Published Workflow**: Work on content in draft mode and publish it only when it is ready for the public. 
 
 ![All Posts](./BlogCMS-Project%20Interface/admin-all-posts.png)  
-  
-*   **Draft vs Published Workflow**: Work on content in draft mode and publish it only when it is ready for the public. 
 
 #### Category Management
  Organize posts with custom categories for better content discoverability.
 
 ![Categories](./BlogCMS-Project%20Interface/admin-categories.png)  
+
 
 *   **Rich Text Editing**: Write using a WYSIWYG editor that supports headers, lists, and formatting.
 *   **Secure Authentication**: Protected admin routes ensuring only authorized users can manage content.
@@ -71,7 +71,6 @@ Admin users log in via a dedicated auth page. The system verifies credentials ag
 ### Creating a Post
 Inside the admin panel, users click "New Post". The editor allows entry of the title, content, and featured image URL. A slug is automatically generated from the title to ensure SEO-friendly URLs.
 
-#### Create New Post Editor
 Rich text editor with draft and publish workflow.
 
 ![Create Post](./BlogCMS-Project%20Interface/create-post-editor.png)
