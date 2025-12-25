@@ -9,7 +9,7 @@ This project was built to bridge the gap between complex enterprise CMS platform
 ### Public Homepage
 The public-facing homepage of BlogCMS, designed for a clean and professional reading experience.
 
-![Public Homepage](BlogCMS-Project Interface/public-homepage.png)
+![Public Homepage](./BlogCMS-Project%20Interface/public-homepage.png)
 
 ## Features
 
