@@ -4,7 +4,9 @@ A modern, professional headless Content Management System designed for managing 
 
 This project was built to bridge the gap between complex enterprise CMS platforms and simple static site generators. It provides a robust, user-friendly interface for content creators while maintaining a clean, scalable backend architecture for developers. It focuses on the core essentials of blogging: writing, organizing, and publishing.
 
-#### Public Homepage
+## Screenshots
+
+### Public Homepage
 The public-facing homepage of BlogCMS, designed for a clean and professional reading experience.
 
 ![Public Homepage](./BlogCMS-Project%20Interface/public-homepage.png)
